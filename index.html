@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Admin Menu</title>
+</head>
+
+<body>
+    <!-- menu de navegacion -->
+    <div class="mr-5 ml-5">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ">
+                    <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Pantalla 1</a>
+                    <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Pantalla 2</a>
+                    <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Pantalla 3</a>
+                    <a class="nav-item nav-link" href="#">Pantalla 4</a>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- fin menu de navegacion -->
+    <!-- inicio cuadro principal -->
+    <div class="mr-5 ml-5 mt-3">
+        <div class="card">
+            <h4 class="ml-3 mb-0">Pantalla 4 - Administracion de imagenes. </h4>
+            <div class="row m-2">
+                <div class="col-sm-6 col-md-6  col-lg-6 col-xl-6 card">
+                    <!-- inicio lista editable -->
+                    <!-- <p> -->
+
+                    <select id="sel" size="10" class="form-control">
+                        <option value="">1920 2 alitas +2</option>
+                        <option value="">RPK PLACA</option>
+                        <option value="">menu</option>
+                        <option value="">sandwich de pollo ahumado</option>
+                    </select>
+                    <div class="row text-center m-2">
+                        <div class="col-sm-6 col-md-6  col-lg-6 col-xl-6">
+                            <input type="button" value="Arriba" onclick="arriba()">
+                        </div>
+                        <div class="col-sm-6 col-md-6  col-lg-6 col-xl-6">
+                            <input type="button" value="Abajo" onclick="abajo()">
+                        </div>
+                    </div>
+                    <!-- </p> -->
+                    <!-- fin lista editable -->
+                </div>
+                <div class="col-sm-4 col-md-4  col-lg-4 col-xl-4 mt-0">
+                    <div class="card" style="width: 18rem;">
+                        <img id="imagen-4" src="img/menu.jpg" class="card-img-top" alt="...">
+
+                    </div>
+                </div>
+            </div>
+            <div class="row text-right m-3">
+                <div class="col-sm-12 col-md-12  col-lg-12 col-xl-12">
+                    <button id="guardar" type="button" class="btn btn-outline-success" onclick="extraer_lista()">Guardar</button>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- fin cuadro principal -->
+
+
+
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/admin_menu.js"></script>
+</body>
+
+</html>
